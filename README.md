@@ -10,7 +10,7 @@ This repository contains Docker files and recommended configurations for a quick
 2. Docker
    - Windows OS (Docker Desktop): Docker version 27.4.0, build bde2b89
    - Linux/Mac OS: _(applicable Docker versions)_
-  
+
 
 Demo
 
@@ -31,9 +31,14 @@ https://github.com/user-attachments/assets/7e7edb8c-3b97-4933-b2a6-14c48e54c0c7
    - See  the [projects/README.md](projects/README.md) file for more details on organizing your project repositories.
    - **INFO:** this step is optional since the Gemini CLI does not require code repositories to answer general prompts.
 
-4. Build the Docker image.
+4. **Local build:** build the Docker image.
    - Run this command only during the **initial installation** or if there are **changes to the `Dockerfile`**.<br>
    - `docker compose build`
+
+5. **Pull the pre-built Docker image**: (Optional) This repository deploys the "latest" Docker image to Docker Hub on the creation of new Release/Tags. It is available at: https://hub.docker.com/r/weaponsforge/gemini-cli
+   - Use this step to skip building the image locally at **step # 4**.
+   - Pull the pre-built development Docker image:
+      `docker pull weaponsforge/gemini-cli`
 
 ## 📖 Usage
 

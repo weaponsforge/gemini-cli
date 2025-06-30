@@ -3,11 +3,8 @@
 name: Publish to Docker Hub
 
 on:
-  push:
-    branches-ignore:
-      - 'main'
   release:
-    # types: [published]
+    types: [published]
 
 env:
   REGISTRY: docker.io
@@ -16,7 +13,7 @@ env:
 jobs:
   docker-build-push:
     name: Build and Push Docker Image
-    # if: github.event.release.target_commitish == 'master' && vars.DOCKERHUB_USERNAME != ''
+    if: github.event.release.target_commitish == 'master' && vars.DOCKERHUB_USERNAME != ''
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -64,7 +61,7 @@ jobs:
             BUILDKIT_INLINE_CACHE=1
 
       - name: Scan image for vulnerabilities
-        uses: aquasecurity/trivy-action@master
+        uses: aquasecurity/trivy-action@0.28.0
         with:
           image-ref: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ github.event.release.tag_name }}
           format: 'sarif'
