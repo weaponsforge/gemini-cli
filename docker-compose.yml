@@ -1,0 +1,14 @@
+services:
+  weaponsforge.gemini-cli:
+    container_name: weaponsforge-gemini-cli
+    image: weaponsforge/gemini-cli:latest
+    env_file:
+      - .env
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./projects:/opt/app/projects
+      - /opt/app/projects/**/node_modules  # Overrides ALL node_modules at any depth
+    stdin_open: true
+    tty: true

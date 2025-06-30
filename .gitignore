@@ -1,0 +1,8 @@
+.env
+
+# Exclude all contents within projects folder recursively
+projects/*
+
+# Keep the projects folder itself and its README.md
+!projects/
+!projects/README.md
