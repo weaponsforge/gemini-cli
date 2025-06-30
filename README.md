@@ -10,6 +10,11 @@ This repository contains Docker files and recommended configurations for a quick
 2. Docker
    - Windows OS (Docker Desktop): Docker version 27.4.0, build bde2b89
    - Linux/Mac OS: _(applicable Docker versions)_
+  
+
+Demo
+
+https://github.com/user-attachments/assets/7e7edb8c-3b97-4933-b2a6-14c48e54c0c7
 
 ## 🛠️ Installation
 
