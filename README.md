@@ -5,7 +5,7 @@ This repository contains Docker files and recommended configurations for a quick
 ### 📋 Requirements
 
 1. Google Gemini API Key
-   - See the [Generating a Google Gemini Key](#generating-a-google-gemini-key) reference for more information.
+   - See the [Generating a Google Gemini Key](#-generating-a-google-gemini-key) reference for more information.
 
 2. Docker
    - Windows OS (Docker Desktop): Docker version 27.4.0, build bde2b89
