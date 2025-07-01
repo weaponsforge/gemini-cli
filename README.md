@@ -14,7 +14,7 @@ This repository contains Docker files and recommended configurations for a quick
 
 Demo
 
-https://github.com/user-attachments/assets/7e7edb8c-3b97-4933-b2a6-14c48e54c0c7
+https://github.com/user-attachments/assets/c314e1be-7315-4a45-af37-41ed050d9be3
 
 ## 🛠️ Installation
 
@@ -26,6 +26,9 @@ https://github.com/user-attachments/assets/7e7edb8c-3b97-4933-b2a6-14c48e54c0c7
    | ID | Description |
    | --- | --- |
    | GEMINI_API_KEY | Google Gemini API key |
+   | GEMINI_MODEL | Gemini model<br><ul><li>`gemini-2.5-pro` (default)</li><li>`gemini-2.5-flash`, `gemini‑1.5‑pro`, etc</li><li><blockquote>**INFO:** Exclude this from the `.env` file if there's no need to change the default model</blockquote></li><ul> |
+
+   💡 Other Gemini CLI **environment variables** are available in its [Environment Variables & .env Files](https://github.com/google-gemini/gemini-cli/blob/main/docs/cli/configuration.md#environment-variables--env-files) documentation.
 
 3. (Optional) Put code repositories or directories for Gemini CLI inspection under the `"/projects"` directory.
    - See  the [projects/README.md](projects/README.md) file for more details on organizing your project repositories.
@@ -78,7 +81,7 @@ https://github.com/user-attachments/assets/7e7edb8c-3b97-4933-b2a6-14c48e54c0c7
 
 _(These steps require a Google account)_
 
-1. Create one from [Google AI Studio](https://aistudio.google.com/app/apikey). This requires a Google account.
+1. Create one from [Google AI Studio](https://aistudio.google.com/app/apikey).
 2. Follow the prompts for creating an API key.
    - Type a project name in which to create the API key.
    - > **INFO:** You may also select an existing Google project in which to create the key.
