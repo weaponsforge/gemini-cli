@@ -14,7 +14,7 @@ This repository contains Docker files and recommended configurations for a quick
 
 Demo
 
-https://github.com/user-attachments/assets/7e7edb8c-3b97-4933-b2a6-14c48e54c0c7
+https://github.com/user-attachments/assets/c314e1be-7315-4a45-af37-41ed050d9be3
 
 ## 🛠️ Installation
 
