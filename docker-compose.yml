@@ -9,6 +9,5 @@ services:
       dockerfile: Dockerfile
     volumes:
       - ./projects:/opt/app/projects
-      - /opt/app/projects/**/node_modules  # Overrides ALL node_modules at any depth
     stdin_open: true
     tty: true

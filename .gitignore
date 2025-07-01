@@ -1,4 +1,5 @@
 .env
+**/node_modules/
 
 # Exclude all contents within projects folder recursively
 projects/*
