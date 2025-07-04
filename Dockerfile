@@ -5,6 +5,7 @@ WORKDIR /opt/app
 RUN chown -R node:node /opt/app
 
 # Install global dependencies as root (necessary for global packages)
+ARG CACHEBUST=1
 RUN npm install -g @google/gemini-cli
 
 # Switch to non-root user
